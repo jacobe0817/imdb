@@ -155,4 +155,5 @@ genres %>%
   ggplot() +
   geom_boxplot(aes(x = decade, y = averageRating, group = interaction(decade, genre), color = genre), outlier.alpha = .2) +
   xlab("Decade") +
-  ylab("Rating")
+  ylab("Rating") +
+  scale_x_continuous(breaks = seq(1910, 2010, 10))
